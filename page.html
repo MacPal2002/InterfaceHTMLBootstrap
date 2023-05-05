@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CeneoScraper</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body class="body h-100 bg-primary-subtle">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-semibold" href="#">CeneoScraper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav-pill">
+                    <a class="nav-link" aria-current="page" href="./index.html">Strona Główna</a>
+                    <a class="nav-link" href="./opinion.html">Ekstrakcja opinii</a>
+                    <a class="nav-link" href="./list.html">Lista produktów</a>
+                    <a class="nav-link" href="#">O autorze</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container pt-5 w-100 d-flex justify-content-center">
+        <table id="example" class="table table-striped table-bordered text-wrap table-responsive">
+            <thead>
+                <tr>
+                    <th>Identyfikator opinii</th>
+                    <th>Autor</th>
+                    <th>Rekomendacja</th>
+                    <th>Liczba gwiazdek</th>
+                    <th>Opinia potwierdzona zakupem</th>
+                    <th>Data wystawienia opinii</th>
+                    <th>Data zakupu produktu</th>
+                    <th>Liczba polubień</th>
+                    <th>Liczba nielubień</th>
+                    <th>Treść opinii</th>
+                    <th>Lista wad</th>
+                    <th>Lista zalet</th>
+                    <th>Dane</th>
+                    <th>Wykresy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jan Kowalski</td>
+                    <td>Tadsddd flujdio l;fhhjkhjkhjk hgjghjkhjhikgl hkulhkldddd sattgedryhk</td>
+                    <td>5</td>
+                    <td>Tak</td>
+                    <td>2022.01.01</td>
+                    <td>2022.01.01</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>Fajne fest</td>
+                    <td>Brak</td>
+                    <td>działa</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pobierz
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">CSV</a></li>
+                              <li><a class="dropdown-item" href="#">XLSX</a></li>
+                              <li><a class="dropdown-item" href="#">JSON</a></li>
+                            </ul>
+                          </div>
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" href="./stats.html" role="button">Wykres</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anna Nowak</td>
+                    <td>Nie</td>
+                    <td>1</td>
+                    <td>Tak</td>
+                    <td>2023.02.02</td>
+                    <td>2023.02.02</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>Nie fajne tego</td>
+                    <td>zepsute</td>
+                    <td>Brak</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pobierz
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">CSV</a></li>
+                              <li><a class="dropdown-item" href="#">XLSX</a></li>
+                              <li><a class="dropdown-item" href="#">JSON</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" href="./stats.html" role="button">Wykres</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kamil Jaszewski</td>
+                    <td>Tak</td>
+                    <td>4</td>
+                    <td>Tak</td>
+                    <td>2011.04.07</td>
+                    <td>2011.05.09</td>
+                    <td>420</td>
+                    <td>69</td>
+                    <td>Dość fajne takie</td>
+                    <td>działa</td>
+                    <td>nielata</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pobierz
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">CSV</a></li>
+                              <li><a class="dropdown-item" href="#">XLSX</a></li>
+                              <li><a class="dropdown-item" href="#">JSON</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" href="./stats.html" role="button">Wykres</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <!-- Footer Section -->
+    <footer class="bg-black text-white d-flex flex-column align-items-center pt-3 fixed-bottom">
+        <p>Designed by Part of Threepi team and LM</p> 
+        <p>Copyright &copy; 2023 All rights restricted</p> 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+       $(document).ready(function () {
+            $('#example').DataTable();
+            
+        });
+    </script>
+</body>
+</html>
